@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page Wireframe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .registration-container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            border-radius: 8px;
+            border: 1px solid black;
+        }
+        .header-table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse; 
+            text-align: center;
+        }
+        .header-table td {
+            border: 1px solid black; 
+            padding: 5px;
+            vertical-align: middle;
+        }
+        .header-table img {
+            width: 50px; 
+            height: 50px;
+        }
+        .header-table h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: black;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px 10px 10px 50px;
+            box-sizing: border-box;
+            border: 2px solid black; 
+            border-radius: 4px;
+        }
+        .form-group .icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: black; 
+        }
+        .form-group .divider {
+            position: absolute;
+            left: 40px; 
+            top: 0; 
+            bottom: 0;
+            width: 2px; 
+            background-color: black;
+        }
+        .form-group.space {
+            margin-bottom: 30px; 
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: lowercase; 
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .agreement {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 0.75em;
+            text-transform: lowercase;
+        }
+        .agreement input {
+            margin-right: 5px;
+        }
+        .agreement a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .agreement a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <table class="header-table">
+            <tr>
+                <td><img src="logo_amikom.png" alt="Logo Web Dosen"></td> 
+                <td><h2>Registrasi Dashboard</h2></td>
+            </tr>
+        </table>
+        <form action="dashboard.html" method="post">
+            <div class="form-group">
+                <i class="bi bi-person-circle icon"></i> 
+                <div class="divider"></div> 
+                <input type="text" id="username" name="username" placeholder="masukan username" required>
+            </div>
+            <div class="form-group space">
+                <i class="bi bi-envelope-at-fill icon"></i> 
+                <div class="divider"></div> 
+                <input type="email" id="email" name="email" placeholder="masukan email" required>
+            </div>
+            <div class="form-group">
+                <i class="bi bi-key-fill icon"></i> 
+                <div class="divider"></div>
+                <input type="password" id="password" name="password" placeholder="buatlah password" required>
+            </div>
+            <div class="form-group">
+                <i class="bi bi-key-fill icon"></i> 
+                <div class="divider"></div>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="konfirmasi password" required>
+            </div>
+            <div class="agreement">
+                <label>
+                    <input type="checkbox" required>
+                    saya menyetujui <a href="syarat.docx">syarat dan kebijakan privasi</a> yang telah berlaku
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">buat akun</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
